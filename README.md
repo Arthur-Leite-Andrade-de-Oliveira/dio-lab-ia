@@ -19,14 +19,14 @@ O Rodrigo é um assistente voltado para educação financeira, com foco em ensin
 
 ## 🏗️ Arquitetura do Sistema
 
-    ```mermaid
+```mermaid
     flowchart TD
-            A[Usuário] --> B[Interface - Streamlit]
-            B --> C[LLM Local - Ollama]
-            C --> D[Base de Dados]
-            D --> C
-            C --> E[Resposta Gerada]
-    ```
+    A[Usuário] --> B[Interface - Streamlit]
+    B --> C[LLM Local - Ollama]
+    C --> D[Base de Dados]
+    D --> C
+    C --> E[Resposta Gerada]
+```
 
 **🧩 Tecnologias utilizadas:**
 - Interface: Streamlit
@@ -54,23 +54,23 @@ O Rodrigo é um assistente voltado para educação financeira, com foco em ensin
 
 ### 1. Instalar o Ollama
 
-    ```bash
+```bash
     # Download em: ollama.com
     ollama pull gpt-oss
     ollama serve
-    ```
+```
 
 ### 2. Instalar as dependências
 
-    ```bash
+```bash
     pip install streamlit pandas requests
-    ```
+```
 
 ### 3. Rodar a aplicação
 
-    ```bash
+```bash
     streamlit run src/app.py
-    ```
+```
 
 ## 🎯 Exemplos de interação
 
